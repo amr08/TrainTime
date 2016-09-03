@@ -15,20 +15,20 @@ var database = firebase.database();
 
 //automatic time
 
-	var time = new Date();
+var time = new Date();
 
-	function updateTime() {
-		time = new Date(time.getTime() + 1000); 
+function updateTime() {
+	time = new Date(time.getTime() + 1000); 
 
-		$("#time").html(moment().format("h:mm:ss a")); 
+	$("#time").html(moment().format("h:mm:ss a")); 
 
-		}
+	}
 
-		$(function() {
-			updateTime();
-			setInterval(updateTime,1000);
+	$(function() {
+		updateTime();
+		setInterval(updateTime,1000);
 				 	
-		});
+	});
 	
 
 //On click listener to add train

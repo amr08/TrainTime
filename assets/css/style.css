@@ -1,6 +1,13 @@
+body {
+	background: url("https://raw.githubusercontent.com/amr08/TrainTime/master/assets/textured_paper/textured_paper.png");
+    margin: 0 auto;
+
+}
+
 .jumbotron {
 	background-color: #1a242f;
 	color: white;
+	text-align: center;
 }
 
 .well {
@@ -8,5 +15,13 @@
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 23px;
+	padding-bottom: 15px;
 
 }
+
+img {
+	height: 70px;
+	width: 70px;
+
+}
+
