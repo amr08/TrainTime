@@ -1,38 +1,38 @@
 
 ///initialize firebase
-var config = {
-    apiKey: "AIzaSyBkFv_w5VYs2Qp0hF08sYxpQdIBfipxNRU",
-    authDomain: "homework-6ee5d.firebaseapp.com",
-    databaseURL: "https://homework-6ee5d.firebaseio.com",
-    storageBucket: "homework-6ee5d.appspot.com",
-};
+	var config = {
+	    apiKey: "AIzaSyBkFv_w5VYs2Qp0hF08sYxpQdIBfipxNRU",
+	    authDomain: "homework-6ee5d.firebaseapp.com",
+	    databaseURL: "https://homework-6ee5d.firebaseio.com",
+	    storageBucket: "homework-6ee5d.appspot.com",
+	};
 
-firebase.initializeApp(config);
+	firebase.initializeApp(config);
 
-var database = firebase.database();
+	var database = firebase.database();
 
 //////-------------------------------------
 
 //automatic time
 
-var time = new Date();
+	var time = new Date();
 
-function updateTime() {
-	time = new Date(time.getTime() + 1000); 
+	function updateTime() {
 
-	$("#time").html(moment().format("h:mm:ss a")); 
+		time = new Date(time.getTime() + 1000); 
 
-	}
+		$("#time").html(moment().format("h:mm:ss a")); 
 
-	$(function() {
-		updateTime();
-		setInterval(updateTime,1000);
-				 	
-	});
+		}
+
+		$(function() {
+			updateTime();
+			setInterval(updateTime,1000);
+					 	
+		});
 	
-
 //On click listener to add train
-$("#addTrain").on("click", function() {
+	$("#addTrain").on("click", function() {
 
 //grabs user input
 	var trTrain = $("#trainName").val().trim();
